@@ -19,17 +19,16 @@ class App extends Component {
     this.emojisFilter = this.emojisFilter.bind(this)
   }
 
-  handleChange (event) {
+  handleChange(event) {
     this.setState({
       filter: event.target.value
     });
     this.emojisFilter(this.state.filter)
   }
 
-  emojisFilter (emojis) {
-    let result = this.state.emojis.filter((emoji)=>{
-      return emoji.keywords.includes(this.state.filter)
-       || emoji.title.includes(this.state.filter)
+  emojisFilter(emojis) {
+    let result = this.state.emojis.filter((emoji) => {
+      return emoji.keywords.includes(this.state.filter) || emoji.title.includes(this.state.filter)
     });
     this.setState({
       filteredEmojis: result
@@ -38,7 +37,7 @@ class App extends Component {
 
   render() {
     return (
-      
+
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -49,12 +48,12 @@ class App extends Component {
         </p>
 
         <div>
-        <EmojiForm filter = {this.state.filter}
-          handleChange = {this.handleChange}
-        />
-        <EmojiList newEmojis = {this.state.filteredEmojis}
-        
-        />
+          <EmojiForm filter={this.state.filter}
+            handleChange={this.handleChange}
+          />
+          <EmojiList newEmojis={this.state.filteredEmojis}
+
+          />
 
         </div>
 

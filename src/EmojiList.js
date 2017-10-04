@@ -8,7 +8,7 @@ import './EmojiList.css'
 class EmojiList extends React.Component {
   render() {
     return (
-      <div>
+      <div className='border'>
 
         {this.props.newEmojis.map((emoji) => {
           return (
