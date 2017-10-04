@@ -1,5 +1,5 @@
 import React from 'react';
-// import PT from 'prop-type';
+import PT from 'prop-types';
 
 import Emoji from './Emoji'
 import './EmojiList.css'
@@ -12,7 +12,7 @@ class EmojiList extends React.Component {
         <div className='inner-space'>
           {this.props.newEmojis.map((emoji) => {
             return (
-              <div className='emojiDiv' onMouseOver={this.handleOver} key={emoji.title}>
+              <div className='emojiDiv' key={emoji.title}>
                 <Emoji
                   title={emoji.title}
                   symbol={emoji.symbol}
@@ -25,9 +25,10 @@ class EmojiList extends React.Component {
       </div>
     );
   }
-  // static propTypes = {
+  static propTypes = {
+newEmojis: PT.array.isRequired,
 
-  // }
+  }
 }
 
 export default EmojiList;
