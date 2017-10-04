@@ -4,7 +4,7 @@ import PT from 'prop-types';
 class Emoji extends React.Component {
   render () {
     return (
-      <p>{this.props.symbol +' '+ this.props.title}</p>
+      <p>{this.props.symbol}</p>
     )
   }
 
