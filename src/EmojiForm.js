@@ -8,7 +8,7 @@ class EmojiForm extends React.Component {
     return (
       <div>
         <form>
-          <textarea  className='inner-wrap' onChange={this.props.handleChange} value={this.props.filter} />
+          <input  placeholder='What are you looking for...' className='inner-wrap' onChange={this.props.handleChange} value={this.props.filter} />
 
         </form>
       </div>

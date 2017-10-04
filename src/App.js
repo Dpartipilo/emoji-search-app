@@ -44,7 +44,7 @@ class App extends Component {
           <h1 className="App-title">Emoji-Search</h1>
         </header>
         <p className="App-intro">
-          Building an Emoji-Search app with react...
+         Emoji-Search
         </p>
 
         <div>

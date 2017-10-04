@@ -1,6 +1,11 @@
 .inner-wrap{
   background: #F8F8F8;
-  border-radius: 6px;
-  margin-bottom: 5px;
+  border-radius: 2px;
   text-align: center;
+  width: 20%;
+  height: 20px;
+  border: 7px #FFFFFF;
 }
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
